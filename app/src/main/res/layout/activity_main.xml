@@ -1,0 +1,887 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryDark">
+
+    <TextView
+        android:id="@+id/txtWordle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wordle"
+        android:textColor="@color/secondary"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/rowsLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rowsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintTop_toBottomOf="@id/txtWordle"
+        app:layout_constraintBottom_toTopOf="@id/keyboardLayout">
+
+        <LinearLayout
+            android:id="@+id/rowOne"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_margin="4dp"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:textColor="@color/secondary"
+            android:textAlignment="center"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <EditText
+                android:id="@+id/rowOneEditTextOne"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:textColor="@color/secondary"
+                android:textAlignment="center"
+                android:background="@drawable/edit_text_not_focused" />
+
+            <EditText
+                android:id="@+id/rowOneEditTextTwo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:textColor="@color/secondary"
+                android:textAlignment="center"
+                android:background="@drawable/edit_text_not_focused" />
+
+            <EditText
+                android:id="@+id/rowOneEditTextThree"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:textColor="@color/secondary"
+                android:textAlignment="center"
+                android:background="@drawable/edit_text_not_focused" />
+
+            <EditText
+                android:id="@+id/rowOneEditTextFour"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:textColor="@color/secondary"
+                android:textAlignment="center"
+                android:background="@drawable/edit_text_not_focused" />
+
+            <EditText
+                android:id="@+id/rowOneEditTextFive"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:textColor="@color/secondary"
+                android:textAlignment="center"
+                android:background="@drawable/edit_text_not_focused" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rowTwo"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_margin="4dp"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:textColor="@color/secondary"
+            android:textAlignment="center"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            app:layout_constraintTop_toBottomOf="@id/rowOne"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <EditText
+                android:id="@+id/rowTwoEditTextOne"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:textColor="@color/secondary"
+                android:textAlignment="center"
+                android:background="@drawable/edit_text_not_focused" />
+
+            <EditText
+                android:id="@+id/rowTwoEditTextTwo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:textColor="@color/secondary"
+                android:textAlignment="center"
+                android:background="@drawable/edit_text_not_focused" />
+
+            <EditText
+                android:id="@+id/rowTwoEditTextThree"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:textColor="@color/secondary"
+                android:textAlignment="center"
+                android:background="@drawable/edit_text_not_focused" />
+
+            <EditText
+                android:id="@+id/rowTwoEditTextFour"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:textColor="@color/secondary"
+                android:textAlignment="center"
+                android:background="@drawable/edit_text_not_focused" />
+
+            <EditText
+                android:id="@+id/rowTwoEditTextFive"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:textColor="@color/secondary"
+                android:textAlignment="center"
+                android:background="@drawable/edit_text_not_focused" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rowThree"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_margin="4dp"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:textColor="@color/secondary"
+            android:textAlignment="center"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            app:layout_constraintTop_toBottomOf="@id/rowTwo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <EditText
+                android:id="@+id/rowThreeEditTextOne"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:textColor="@color/secondary"
+                android:textAlignment="center"
+                android:background="@drawable/edit_text_not_focused" />
+
+            <EditText
+                android:id="@+id/rowThreeEditTextTwo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:textColor="@color/secondary"
+                android:textAlignment="center"
+                android:background="@drawable/edit_text_not_focused" />
+
+            <EditText
+                android:id="@+id/rowThreeEditTextThree"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:textColor="@color/secondary"
+                android:textAlignment="center"
+                android:background="@drawable/edit_text_not_focused" />
+
+            <EditText
+                android:id="@+id/rowThreeEditTextFour"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:textColor="@color/secondary"
+                android:textAlignment="center"
+                android:background="@drawable/edit_text_not_focused" />
+
+            <EditText
+                android:id="@+id/rowThreeEditTextFive"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:textColor="@color/secondary"
+                android:textAlignment="center"
+                android:background="@drawable/edit_text_not_focused" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rowFour"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_margin="4dp"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:textColor="@color/secondary"
+            android:textAlignment="center"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            app:layout_constraintTop_toBottomOf="@id/rowThree"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <EditText
+                android:id="@+id/rowFourEditTextOne"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:textColor="@color/secondary"
+                android:textAlignment="center"
+                android:background="@drawable/edit_text_not_focused" />
+
+            <EditText
+                android:id="@+id/rowFourEditTextTwo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:textColor="@color/secondary"
+                android:textAlignment="center"
+                android:background="@drawable/edit_text_not_focused" />
+
+            <EditText
+                android:id="@+id/rowFourEditTextThree"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:textColor="@color/secondary"
+                android:textAlignment="center"
+                android:background="@drawable/edit_text_not_focused" />
+
+            <EditText
+                android:id="@+id/rowFourEditTextFour"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:textColor="@color/secondary"
+                android:textAlignment="center"
+                android:background="@drawable/edit_text_not_focused" />
+
+            <EditText
+                android:id="@+id/rowFourEditTextFive"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:textColor="@color/secondary"
+                android:textAlignment="center"
+                android:background="@drawable/edit_text_not_focused" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rowFive"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_margin="4dp"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:textColor="@color/secondary"
+            android:textAlignment="center"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            app:layout_constraintTop_toBottomOf="@id/rowFour"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <EditText
+                android:id="@+id/rowFiveEditTextOne"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:textColor="@color/secondary"
+                android:textAlignment="center"
+                android:background="@drawable/edit_text_not_focused" />
+
+            <EditText
+                android:id="@+id/rowFiveEditTextTwo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:textColor="@color/secondary"
+                android:textAlignment="center"
+                android:background="@drawable/edit_text_not_focused" />
+
+            <EditText
+                android:id="@+id/rowFiveEditTextThree"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:textColor="@color/secondary"
+                android:textAlignment="center"
+                android:background="@drawable/edit_text_not_focused" />
+
+            <EditText
+                android:id="@+id/rowFiveEditTextFour"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:textColor="@color/secondary"
+                android:textAlignment="center"
+                android:background="@drawable/edit_text_not_focused" />
+
+            <EditText
+                android:id="@+id/rowFiveEditTextFive"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:textColor="@color/secondary"
+                android:textAlignment="center"
+                android:background="@drawable/edit_text_not_focused" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rowSix"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_margin="4dp"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:textColor="@color/secondary"
+            android:textAlignment="center"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            app:layout_constraintTop_toBottomOf="@id/rowFive"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <EditText
+                android:id="@+id/rowSixEditTextOne"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:textColor="@color/secondary"
+                android:textAlignment="center"
+                android:background="@drawable/edit_text_not_focused" />
+
+            <EditText
+                android:id="@+id/rowSixEditTextTwo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:textColor="@color/secondary"
+                android:textAlignment="center"
+                android:background="@drawable/edit_text_not_focused" />
+
+            <EditText
+                android:id="@+id/rowSixEditTextThree"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:textColor="@color/secondary"
+                android:textAlignment="center"
+                android:background="@drawable/edit_text_not_focused" />
+
+            <EditText
+                android:id="@+id/rowSixEditTextFour"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:textColor="@color/secondary"
+                android:textAlignment="center"
+                android:background="@drawable/edit_text_not_focused" />
+
+            <EditText
+                android:id="@+id/rowSixEditTextFive"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:textColor="@color/secondary"
+                android:textAlignment="center"
+                android:background="@drawable/edit_text_not_focused" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/keyboardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintTop_toBottomOf="@id/rowsLayout"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:id="@+id/keyboardRowOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/keyboardRowTwo">
+
+            <Button
+                android:id="@+id/keyQ"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="0dp"
+                android:text="Q"
+                android:textColor="@color/primaryDark"
+                android:layout_weight="1"
+                android:backgroundTint="@color/secondary"/>
+
+            <Button
+                android:id="@+id/keyW"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="0dp"
+                android:text="W"
+                android:textColor="@color/primaryDark"
+                android:layout_weight="1"
+                android:backgroundTint="@color/secondary"/>
+
+            <Button
+                android:id="@+id/keyE"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="0dp"
+                android:text="E"
+                android:textColor="@color/primaryDark"
+                android:layout_weight="1"
+                android:backgroundTint="@color/secondary"/>
+
+            <Button
+                android:id="@+id/keyR"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="0dp"
+                android:text="R"
+                android:textColor="@color/primaryDark"
+                android:layout_weight="1"
+                android:backgroundTint="@color/secondary"/>
+
+            <Button
+                android:id="@+id/keyT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="0dp"
+                android:text="T"
+                android:textColor="@color/primaryDark"
+                android:layout_weight="1"
+                android:backgroundTint="@color/secondary"/>
+
+            <Button
+                android:id="@+id/keyY"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="0dp"
+                android:text="Y"
+                android:textColor="@color/primaryDark"
+                android:layout_weight="1"
+                android:backgroundTint="@color/secondary"/>
+
+            <Button
+                android:id="@+id/keyU"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="0dp"
+                android:text="U"
+                android:textColor="@color/primaryDark"
+                android:layout_weight="1"
+                android:backgroundTint="@color/secondary"/>
+
+            <Button
+                android:id="@+id/keyI"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="0dp"
+                android:text="I"
+                android:textColor="@color/primaryDark"
+                android:layout_weight="1"
+                android:backgroundTint="@color/secondary"/>
+
+            <Button
+                android:id="@+id/keyO"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="0dp"
+                android:text="O"
+                android:textColor="@color/primaryDark"
+                android:layout_weight="1"
+                android:backgroundTint="@color/secondary"/>
+
+            <Button
+                android:id="@+id/keyP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="0dp"
+                android:text="P"
+                android:textColor="@color/primaryDark"
+                android:layout_weight="1"
+                android:backgroundTint="@color/secondary"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/keyboardRowTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:weightSum="9"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/keyboardRowOne"
+            app:layout_constraintBottom_toTopOf="@id/keyboardRowThree">
+
+            <Button
+                android:id="@+id/keyA"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="0dp"
+                android:text="A"
+                android:textColor="@color/primaryDark"
+                android:layout_weight="1"
+                android:backgroundTint="@color/secondary"/>
+
+            <Button
+                android:id="@+id/keyS"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="0dp"
+                android:text="S"
+                android:textColor="@color/primaryDark"
+                android:layout_weight="1"
+                android:backgroundTint="@color/secondary"/>
+
+            <Button
+                android:id="@+id/keyD"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="0dp"
+                android:text="D"
+                android:textColor="@color/primaryDark"
+                android:layout_weight="1"
+                android:backgroundTint="@color/secondary"/>
+
+            <Button
+                android:id="@+id/keyF"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="0dp"
+                android:text="F"
+                android:textColor="@color/primaryDark"
+                android:layout_weight="1"
+                android:backgroundTint="@color/secondary"/>
+
+            <Button
+                android:id="@+id/keyG"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="0dp"
+                android:text="G"
+                android:textColor="@color/primaryDark"
+                android:layout_weight="1"
+                android:backgroundTint="@color/secondary"/>
+
+            <Button
+                android:id="@+id/keyH"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="0dp"
+                android:text="H"
+                android:textColor="@color/primaryDark"
+                android:layout_weight="1"
+                android:backgroundTint="@color/secondary"/>
+
+            <Button
+                android:id="@+id/keyJ"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="0dp"
+                android:text="J"
+                android:textColor="@color/primaryDark"
+                android:layout_weight="1"
+                android:backgroundTint="@color/secondary"/>
+
+            <Button
+                android:id="@+id/keyK"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="0dp"
+                android:text="K"
+                android:textColor="@color/primaryDark"
+                android:layout_weight="1"
+                android:backgroundTint="@color/secondary"/>
+
+            <Button
+                android:id="@+id/keyL"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="0dp"
+                android:text="L"
+                android:textColor="@color/primaryDark"
+                android:layout_weight="1"
+                android:backgroundTint="@color/secondary"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/keyboardRowThree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/keyboardRowTwo"
+            app:layout_constraintBottom_toTopOf="@id/keyboardRowFour">
+
+            <Button
+                android:id="@+id/keyEnter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="0dp"
+                android:text="ENTER"
+                android:textColor="@color/primaryDark"
+                android:layout_weight="1.5"
+                android:backgroundTint="@color/secondary"/>
+
+            <Button
+                android:id="@+id/keyZ"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="0dp"
+                android:text="Z"
+                android:textColor="@color/primaryDark"
+                android:layout_weight="1"
+                android:backgroundTint="@color/secondary"/>
+
+            <Button
+                android:id="@+id/keyX"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="0dp"
+                android:text="X"
+                android:textColor="@color/primaryDark"
+                android:layout_weight="1"
+                android:backgroundTint="@color/secondary"/>
+
+            <Button
+                android:id="@+id/keyC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="0dp"
+                android:text="C"
+                android:textColor="@color/primaryDark"
+                android:layout_weight="1"
+                android:backgroundTint="@color/secondary"/>
+
+            <Button
+                android:id="@+id/keyV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="0dp"
+                android:text="V"
+                android:textColor="@color/primaryDark"
+                android:layout_weight="1"
+                android:backgroundTint="@color/secondary"/>
+
+            <Button
+                android:id="@+id/keyB"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="0dp"
+                android:text="B"
+                android:textColor="@color/primaryDark"
+                android:layout_weight="1"
+                android:backgroundTint="@color/secondary"/>
+
+            <Button
+                android:id="@+id/keyN"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="0dp"
+                android:text="N"
+                android:textColor="@color/primaryDark"
+                android:layout_weight="1"
+                android:backgroundTint="@color/secondary"/>
+
+            <Button
+                android:id="@+id/keyM"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="0dp"
+                android:text="M"
+                android:textColor="@color/primaryDark"
+                android:layout_weight="1"
+                android:backgroundTint="@color/secondary"/>
+
+            <Button
+                android:id="@+id/keyDelete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="0dp"
+                android:text="DEL"
+                android:textColor="@color/primaryDark"
+                android:layout_weight="1.5"
+                android:backgroundTint="@color/secondary"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/keyboardRowFour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginHorizontal="80dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/keyboardRowThree"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <Button
+                android:id="@+id/keyLeft"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="0dp"
+                android:text="@string/arrow_left"
+                android:textColor="@color/primaryDark"
+                android:layout_weight="1"
+                android:backgroundTint="@color/secondary"/>
+
+            <Button
+                android:id="@+id/keyRight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="0dp"
+                android:text="@string/arrow_right"
+                android:textColor="@color/primaryDark"
+                android:layout_weight="1"
+                android:backgroundTint="@color/secondary"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
