@@ -20,6 +20,16 @@ The rules of Wordle are straightforward:
 
 ## Screenshots
 
+<p float="left">
+  <img src="https://github.com/nishita0512/Wordle/blob/master/Screenshots/Guessing1.jpg" width="300" height="630" />
+  <img src="https://github.com/nishita0512/Wordle/blob/master/Screenshots/Guessing2.jpg" width="300" height="630" />
+</p>
+
+<p float="left">
+  <img src="https://github.com/nishita0512/Wordle/blob/master/Screenshots/Victory.jpg" width="300" height="630" />
+  <img src="https://github.com/nishita0512/Wordle/blob/master/Screenshots/Defeat.jpg" width="300" height="630" />
+</p>
+
 ## Getting Started
 
 Once you have installed Wordle on your Android device, follow these steps to start playing:
